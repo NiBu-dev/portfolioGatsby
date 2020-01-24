@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 import Header from "../components/header"
 import FooterComponent from "../components/footer/footer"
@@ -27,7 +28,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
+        <ParallaxProvider>
+          <main>{children}</main>
+        </ParallaxProvider>
       <FooterComponent />
     </>
   )

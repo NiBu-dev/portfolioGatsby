@@ -1,0 +1,26 @@
+.presentation {
+    height: 95vh;
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-container {
+        width: 74rem;
+    }
+    
+    &-name {
+        font-size: 8rem;
+        font-weight: 700;
+        color: $text-color-primary;
+    }
+
+    &-position,
+    &-stack {
+        font-size: 3rem;
+        font-weight: 400;
+        color: $text-color-secondary;
+        margin: 1rem 0;
+    };
+
+}

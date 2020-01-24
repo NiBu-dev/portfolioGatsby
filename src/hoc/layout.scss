@@ -1,8 +1,13 @@
+@import "../sass/abstracts/variables";
+
+@import "../sass/components/presentation";
+@import "../sass/components/work";
+@import "../sass/components/contact";
+
 html {
   font-family: "Open Sans", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 
   @media only screen and (max-width: 700px) {
@@ -10,17 +15,53 @@ html {
   }
 }
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  line-height: 1.6;
   color: white;
-  background: #0f0f0f;
-  min-height: 100vh;
+  background: $color-gray-dark;
+  margin: 0;
+}
+
+main {
+  display: block;
 }
 
 body.light-mode {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: $color-gray-dark;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: gray;
+  -webkit-box-shadow: 0 0 0px 1000px #272e3c inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+footer {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .img-wrapper {
+    width: 5rem;
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: 4rem;
+    }
   }
+
+  .tnc {
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+}
