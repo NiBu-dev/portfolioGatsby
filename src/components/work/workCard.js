@@ -6,9 +6,9 @@ const WorkCardComponent = ({project}) => {
     return (
         <div className="card-wrapper">
             <div className="card-container">
-                <h2 className="card-container--title">
+                <a className="card-container--title" href={project.webLink} target="_blank" rel="noopener noreferrer">
                     {project.name}
-                </h2>
+                </a>
                 <h3 className="card-container--desc">
                     {project.description}
                 </h3>

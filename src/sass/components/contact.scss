@@ -18,6 +18,23 @@
         height: 100%;
     }
 
+    &-links {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+
+    &-link {
+        width: 4rem;
+
+        &:first-child {
+            margin-right: 2rem;
+        }
+    }
+
     &-question {
         font-size: 2.5rem;
         font-weight: 400;
@@ -53,6 +70,10 @@
         width: 100%;
         padding-top: 2rem;
         padding-bottom: 1rem;
+
+        &:focus {
+            border-bottom-color: #04c2c9;
+        }
     }
 
     &-textarea {
@@ -82,3 +103,5 @@
         }
     }
 }
+
+

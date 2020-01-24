@@ -17,7 +17,7 @@ const WorkComponent = () => {
         }
     }
     return (
-        <section className="work">
+        <section className="work" id="work">
             <div className="work-container">
                 <h2 className="work-container--title section-title">My Work</h2>
                 <div className="work-cards">

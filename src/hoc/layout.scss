@@ -3,6 +3,7 @@
 @import "../sass/components/presentation";
 @import "../sass/components/work";
 @import "../sass/components/contact";
+@import "../sass//components/navigation";
 
 html {
   font-family: "Open Sans", sans-serif;
@@ -44,23 +45,9 @@ select:-webkit-autofill:focus {
 }
 
 footer {
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  .img-wrapper {
-    width: 5rem;
-    cursor: pointer;
-
-    &:first-child {
-      margin-right: 4rem;
-    }
-  }
 
   .tnc {
-    margin-top: 3rem;
+    margin-top: 9rem;
     width: 100%;
     text-align: center;
   }

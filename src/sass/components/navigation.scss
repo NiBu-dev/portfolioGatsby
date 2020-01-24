@@ -1,0 +1,23 @@
+.header-nav {
+    height: 5rem;
+    background: $color-gray-dark2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    a {
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: white;
+        
+        &:last-child {
+            margin-right: 2rem;
+        }
+
+        &:hover {
+            color: $text-color-secondary;
+        }
+    }
+}
