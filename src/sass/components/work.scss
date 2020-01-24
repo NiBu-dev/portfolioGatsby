@@ -48,6 +48,7 @@
         box-sizing: border-box;
         padding: 2rem;
         position: relative;
+        transition: transform .3s;
 
         &--title {
             font-size: 3rem;
@@ -69,10 +70,21 @@
 
         &--icon {
             width: 3rem;
+            transition: all 3s;
+            animation: moveUpAndDown 2s ease-in-out 0s infinite alternate none running;
+            animation-fill-mode: backwards;
             
             &:first-child {
                 margin-right: 1.5rem;
             }
+
+            &:hover {
+                animation: none !important;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-.3rem);
         }
     }
 }
@@ -80,4 +92,25 @@
 .section-title {
     font-size: 5rem;
     font-weight: 600;
+}
+
+@keyframes moveUpAndDown {
+    0% {
+        
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(-30deg);
+    }
+
+
+    75% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+    
+        transform: rotateZ(30deg);
+    }
 }

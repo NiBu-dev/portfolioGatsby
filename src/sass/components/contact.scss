@@ -26,6 +26,10 @@
 
 }
 
+.form-wrapper {
+    position: relative;
+}
+
 .form {
     background: #272e3c;
     
@@ -59,8 +63,9 @@
 
     &-btn {
         display: block;
-        margin-top: 5rem;
-        margin-left: auto;
+        position: absolute;
+        bottom: -10rem;
+        right: 0;
 
         font-size: 1.2rem;
         background: transparent;
