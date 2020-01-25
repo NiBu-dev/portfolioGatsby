@@ -80,6 +80,10 @@
         width: 100%;
         height: 20vh;
         border: none;
+
+        &:focus {
+            border-bottom: 1px solid #04c2c9;
+        }
     }
 
     &-btn {

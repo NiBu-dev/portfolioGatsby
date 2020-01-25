@@ -11,7 +11,7 @@ const PresentationComponent = () => {
                     I'm a frontend developer
                 </h3>
                 <h4 className="presentation-stack">
-                    My stack: Javascript, HTML, CSS, React, Next, Gatsby
+                    My stack: Javascript, HTML, CSS, React, Next, Redux
                 </h4>
             </div>
         </section>
