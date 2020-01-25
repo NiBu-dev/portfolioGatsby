@@ -1,6 +1,7 @@
 import React from "react";
-import GithubImage from "../images/githubImage64"
-import LinkedinImage from "../images/linkdeinImage";
+import GithubIcon from "../../images/github.inline.svg";
+import LinkedinIcon from "../../images/linkedin.inline.svg";
+
 
 const ContactComponent = () => {
 
@@ -20,12 +21,12 @@ const ContactComponent = () => {
                 <div className="contact-links">
                     <div className="contact-link">
                         <a className="contact-img-wrapper" href="https://github.com/sahas023" target="_blank" rel="noopener noreferrer">
-                            <GithubImage />
+                            <GithubIcon />
                         </a>
                     </div>
                     <div className="contact-link">
                         <a className="contact-img-wrapper" href="https://www.linkedin.com/in/nicolae-bumbu-473940159/" target="_blank" rel="noopener noreferrer">
-                            <LinkedinImage />
+                            <LinkedinIcon />
                         </a>
                     </div>
                 </div>

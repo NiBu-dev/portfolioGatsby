@@ -1,6 +1,7 @@
 import React from "react";
-import GithubImage from "./githubImage";
-import LiveWebImage from "./liveWebImage"
+import LaptopIcon from "../../images/laptop.inline.svg";
+import GithubIcon from "../../images/github.inline.svg"
+
 
 const WorkCardComponent = ({project}) => {
     return (
@@ -14,10 +15,10 @@ const WorkCardComponent = ({project}) => {
                 </h3>
                 <div className="card-container--icons">
                     {project.githubLinks ?  <a className="card-container--icon" href={project.githubLinks} target="_blank" rel="noopener noreferrer">
-                        <GithubImage />
+                        <GithubIcon />
                     </a> : null}
                     <a className="card-container--icon" href={project.webLink} target="_blank" rel="noopener noreferrer">
-                        <LiveWebImage />
+                        <LaptopIcon />
                     </a>
                 </div>
             </div>
