@@ -2,7 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => {
-  if (window) {
+  if (typeof window !== 'undefined' &&
+  window.document && window.document.createElement) {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
