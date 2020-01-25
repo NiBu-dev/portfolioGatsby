@@ -2,15 +2,18 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+  if (window) {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
       });
     });
-  });
+  }
+
 
   return (<header className="header">
     <nav className="header-nav">
