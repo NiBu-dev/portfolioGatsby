@@ -19,10 +19,7 @@
     }
 
     &-links {
-        position: absolute;
-        bottom: 25%;
-        left: 50%;
-        transform: translateX(-50%);
+        transform: translateY(20rem);
         display: flex;
         justify-content: center;
     }
