@@ -8,7 +8,7 @@ import ContactComponent from "../components/contact/contact";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Portfolio" />
     <PresentationComponent />
     <WorkComponent />
     <ContactComponent />
