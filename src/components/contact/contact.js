@@ -11,9 +11,9 @@ const ContactComponent = () => {
                 <h2 className="section-title">Let's get in touch</h2>
                 <h3 className="contact-question">Have a question or want to work together?</h3>
                 <div className="form-wrapper">
-                    <form className="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        <input className="form-input" type="text" placeholder="Name" name="user-name" required />
-                        <input className="form-input" type="email" placeholder="Email" name="user-email" required />
+                    <form className="form" name="Visitor Contact Form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="text" name="user-name" className="form-input" placeholder="Name" required />
+                        <input type="email" name="user-email" className="form-input email" placeholder="Email" required />
                         <textarea className="form-textarea" placeholder="Your message" name="message" required />
                         <button className="form-btn" type="submit">SUBMIT</button>
                     </form>
