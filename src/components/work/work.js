@@ -1,5 +1,6 @@
 import React from "react";
 import WorkCardComponent from "./workCard";
+import { Parallax } from 'react-scroll-parallax';
 
 const WorkComponent = () => {
     const myWorkData = {
@@ -16,17 +17,21 @@ const WorkComponent = () => {
             webLink: "http://pin-pin-mapper.herokuapp.com/"
         }
     }
+    
     return (
-        <section className="work" id="work">
-            <div className="work-container">
-                <h2 className="work-container--title section-title">My Work</h2>
-                <div className="work-cards">
-                    {Object.keys(myWorkData).map((project, index) => {
-                        return <WorkCardComponent key={index} project={myWorkData[project]} />
-                    })}
+        <Parallax className="parallax" y={[-20, 20]} tagOuter="figure">
+            <section className="work" id="work">
+                <div className="work-container">
+                    <h2 className="work-container--title section-title">My Work</h2>
+                    <div className="work-cards">
+                        {Object.keys(myWorkData).map((project, index) => {
+                            return <WorkCardComponent key={index} project={myWorkData[project]} />
+                        })}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </Parallax>
+
     )
 };
 
