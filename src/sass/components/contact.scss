@@ -1,5 +1,5 @@
 .contact {
-    height: 100vh;
+    min-height: 100vh;
     background: $color-gray-dark2;
     transform: skewY(-7deg);
     display: flex;
@@ -61,6 +61,11 @@
         color: white;
         padding: 1rem;
         font-size: 2rem;
+    }
+
+    label {
+        position: absolute;
+        z-index: -1;
     }
 
     &-input {

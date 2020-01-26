@@ -13,9 +13,18 @@ const ContactComponent = () => {
                 <div className="form-wrapper">
                     <form className="form" name="Visitor Contact Form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                         <input type="hidden" name="form-name" value="Visitor Contact Form" />
-                        <input type="text" name="user-name" className="form-input" placeholder="Name" required />
-                        <input type="email" name="user-email" className="form-input email" placeholder="Email" required />
-                        <textarea className="form-textarea" placeholder="Your message" name="message" required />
+                        <div>
+                            <label htmlFor="name">Name</label>
+                            <input type="text" id="name" name="user-name" className="form-input" placeholder="Name" required />
+                        </div>
+                        <div>
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id="email" name="user-email" className="form-input email" placeholder="Email" required />
+                        </div>
+                        <div>
+                            <label htmlFor="message">Your message</label>
+                            <textarea id="message" className="form-textarea" placeholder="Your message" name="message" required />
+                        </div>
                         <button className="form-btn" type="submit">SUBMIT</button>
                     </form>
                 </div>
