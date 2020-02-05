@@ -2,21 +2,46 @@
     height: 80vh;
     padding: 6rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+
+    &-image {
+        width: 200px;
+        height: 200px;
+        position: relative;
+
+        img {
+            border-radius: 50%;
+            filter: grayscale(.8);
+            outline: none;;
+
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            // background: linear-gradient(to right, #2c3e50c4, #bdc3c730);
+        }
+    }
 
     &-container {
         width: 74rem;
+        margin-top: 25vh;
     }
     
     &-name {
         font-size: 8rem;
         font-weight: 700;
         color: $text-color-primary;
+        margin: 2rem 0;
     }
 
-    &-position,
-    &-stack {
+    &-position {
         font-size: 3rem;
         font-weight: 400;
         color: $text-color-secondary;

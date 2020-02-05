@@ -8,13 +8,15 @@ const WorkComponent = () => {
             name: "Carblee",
             description: "New Car buying platform.",
             githubLink: null,
-            webLink: "https://www.carblee.com"
+            webLink: "https://www.carblee.com",
+            stack: ["React.js", "Next.js", "Styled Components"]
         },
         "pinMapper": {
             name: "Pin Mapper",
             description: "Helper app for engineers to map microcontroller peripherals to pins.",
             githubLinks: "https://github.com/sahas023/pinMapperFrontend",
-            webLink: "http://pin-pin-mapper.herokuapp.com/"
+            webLink: "http://pin-pin-mapper.herokuapp.com/",
+            stack: ["React.js", "Styled Components", "Node.js", "MongoDB", "Heroku"]
         }
     }
     
