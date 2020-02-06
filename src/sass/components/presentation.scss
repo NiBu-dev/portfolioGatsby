@@ -2,21 +2,22 @@
     height: 80vh;
     padding: 6rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     &-container {
         width: 74rem;
+        margin-top: 25vh;
     }
     
     &-name {
         font-size: 8rem;
         font-weight: 700;
         color: $text-color-primary;
+        margin: 2rem 0;
     }
 
-    &-position,
-    &-stack {
+    &-position {
         font-size: 3rem;
         font-weight: 400;
         color: $text-color-secondary;

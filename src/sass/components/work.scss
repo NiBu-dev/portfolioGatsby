@@ -1,5 +1,5 @@
 .work {
-    height: 100vh;
+    min-height: 100vh;
     background: #ff00cc;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -34,7 +34,7 @@
 .card {
     &-wrapper {
         flex: 100%;
-        height: 25rem;
+        height: auto;
         padding: 1rem;
     }
 
@@ -67,25 +67,102 @@
             font-weight: 400;
         }
 
+        &--tech {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 0;
+
+            @media only screen and (max-width: 700px) {
+                margin-bottom: 6rem;
+                flex-wrap: wrap;
+            }
+
+            .card-box {
+                width: 4rem;
+                height: 4rem;
+                padding: 1rem;
+                border-radius: 0.4rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                margin-right: 1rem;
+                margin-top: 1rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                span {
+                    margin-top: 1rem;
+                }
+
+                svg {
+                    height: 3rem;
+                    width: 3rem;
+                    fill: $color-white;
+                }
+
+                &--react {
+                    background-color: #61dafb7a;
+                }
+                
+                &--redux {
+                    background-color: #764ABC;
+                }
+
+                &--next {
+                    background-color: #0000008c;
+                }
+
+                &--styledcomponents {
+                    background-color: #9c1e47;
+                    width: auto
+                }
+
+                &--nodejs {
+                    background-color: #33993352;
+                }
+
+                &--mongodb {
+                    background-color: #47a2488f;
+                }
+
+                &--heroku {
+                    background-color: #43009866;
+                }
+            }
+
+        }
+
         &--icons {
             position: absolute;
             right: 2rem;
             bottom: 2rem;
             display: flex;
-        }
 
-        &--icon {
-            width: 3rem;
-            transition: all 3s;
-            animation: moveUpAndDown 2s ease-in-out 0s infinite alternate none running;
-            animation-fill-mode: backwards;
-            
-            &:first-child {
-                margin-right: 1.5rem;
-            }
+            .card-icon {
+                width: 3rem;
+                transition: all 3s;
+                animation: moveUpAndDown 2s ease-in-out 0s infinite alternate none running;
+                animation-fill-mode: backwards;
+                
+                &:first-child {
+                    margin-right: 1.5rem;
+                }
+    
+                &:hover {
+                    animation: none !important;
+                }
 
-            &:hover {
-                animation: none !important;
+                &--laptop {
+                    
+                    svg {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
             }
         }
 
@@ -93,6 +170,7 @@
             transform: translateY(-.3rem);
         }
     }
+
 }
 
 .section-title {

@@ -2,6 +2,7 @@
 
 @import "../sass/components/presentation";
 @import "../sass/components/work";
+@import "../sass//components/about";
 @import "../sass/components/contact";
 @import "../sass//components/navigation";
 
@@ -10,6 +11,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  scroll-behavior: smooth;
 
   @media only screen and (max-width: 700px) {
     font-size: 50%;
