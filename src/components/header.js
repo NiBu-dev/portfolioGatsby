@@ -3,7 +3,7 @@ import React from "react"
 
 const Header = ({ siteTitle }) => {
   if (typeof window !== 'undefined' &&
-  window.document && window.document.createElement) {
+    window.document && window.document.createElement) {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -18,12 +18,15 @@ const Header = ({ siteTitle }) => {
 
   return (<header className="header">
     <nav className="header-nav">
+      <a href="#about">
+        About
+      </a>
       <a href="#work">
         Projects
-  </a>
+      </a>
       <a href="#contact">
         Contact
-  </a>
+      </a>
     </nav>
     <div className="waves">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 14" height="70" width="100%" preserveAspectRatio="none" aria-hidden="true" focusable="false" className="sc-1qsp046-2 fYAseG">

@@ -27,7 +27,7 @@ import { Parallax } from 'react-scroll-parallax';
 const AboutComponent = () => {
     return (
         <Parallax className="parallax" y={[-10, -10]} tagOuter="figure">
-            <section className="about">
+            <section className="about" id="about">
                 <div className="about-content">
                     <h1 className="about-title section-title">Who is this guy?</h1>
                     <div className="description">

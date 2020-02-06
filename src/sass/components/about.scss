@@ -7,6 +7,7 @@
     align-items: flex-start;
     padding: 6rem;
     position: relative;
+    margin-top: -10vh;
 
     & > * {
         transform: skewY(7deg);
@@ -94,11 +95,18 @@
         display: flex;
         align-items: center;
 
+        @media only screen and (max-width: 700px) {
+            flex-direction: column-reverse;
+        }
+
         &-text {
             font-size: 2rem;
             display: inline-block;
             width: 50%;
             line-height: 1.5;
+            @media only screen and (max-width: 700px) {
+                width: 100%;
+            }
         }
 
 
