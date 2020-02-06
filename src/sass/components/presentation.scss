@@ -1,13 +1,12 @@
 .presentation {
-    height: 80vh;
+    height: calc(100vh - 120px);
     padding: 6rem;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 
     &-container {
         width: 74rem;
-        margin-top: 25vh;
     }
     
     &-name {
