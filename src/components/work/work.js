@@ -9,14 +9,14 @@ const WorkComponent = () => {
             description: "New Car buying platform.",
             githubLink: null,
             webLink: "https://www.carblee.com",
-            stack: ["React.js", "Next.js", "Styled Components"]
+            stack: ["React.js", "Redux.js", "Next.js", "Styled Components"]
         },
         "pinMapper": {
             name: "Pin Mapper",
             description: "Helper app for engineers to map microcontroller peripherals to pins.",
             githubLinks: "https://github.com/sahas023/pinMapperFrontend",
             webLink: "http://pin-pin-mapper.herokuapp.com/",
-            stack: ["React.js", "Styled Components", "Node.js", "MongoDB", "Heroku"]
+            stack: ["React.js", "Redux.js", "Styled Components", "Node.js", "MongoDB", "Heroku"]
         }
     }
     

@@ -1,5 +1,4 @@
 import React from "react";
-// import ProfileImage from "./image";
 
 const PresentationComponent = () => {
     return (

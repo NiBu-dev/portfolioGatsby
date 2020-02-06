@@ -1,10 +1,11 @@
 import React from "react";
 import ReactIcon from "../../images/react.inline.svg";
-import NextIcon from "../../images/next-dot-js.inline.svg"
-import StyledComponentsIcon from "../../images/styled-components.inline.svg"
+import NextIcon from "../../images/next-dot-js.inline.svg";
+import StyledComponentsIcon from "../../images/styled-components.inline.svg";
 import NodeJsIcon from "../../images/node-dot-js.inline.svg";
 import MongoDbIcon from "../../images/mongodb.inline.svg";
 import HerokuIcon from "../../images/heroku.inline.svg"
+import ReduxIcon from "../../images/redux.inline.svg";
 
 const TechCardComponent = ({ techItemName }) => {
     let icon = null;
@@ -14,6 +15,11 @@ const TechCardComponent = ({ techItemName }) => {
         case "React.js": {
             icon = <ReactIcon />
             style += " card-box--react"
+            break;
+        }
+        case "Redux.js": {
+            icon = <ReduxIcon />
+            style += " card-box--redux"
             break;
         }
         case "Next.js": {

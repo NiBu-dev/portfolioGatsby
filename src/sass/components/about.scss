@@ -38,7 +38,7 @@
                             height: 8rem;
                             background-color: transparent;
                             margin: 1rem 1rem;
-                            border: 1px solid white;
+                            // border: 1px solid white;
                             border-radius: 4px;
                             display: flex;
                             justify-content: flex-start;
@@ -61,6 +61,20 @@
                                 text-align: center;
                                 margin-top: 1rem;
                             }
+
+                            &--cypress {
+                                svg {
+                                    width: 7rem;
+                                    margin-bottom: 1rem;
+                                }
+                            }
+
+                            &--express {
+
+                                svg {
+                                    height: 3rem;
+                                }
+                            }
                         
                         }
                     }
@@ -76,8 +90,52 @@
         }
     }
 
-    &-description {
-        font-size: 2rem;
+    .description {
+        display: flex;
+        align-items: center;
+
+        &-text {
+            font-size: 2rem;
+            display: inline-block;
+            width: 50%;
+            line-height: 1.5;
+        }
+
+
+        &-image {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+
+            img {
+                border-radius: 50%;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to right, #2c3e50c4, #bdc3c730);
+                border-radius: 50%;
+                opacity: 50%;
+                transition: all .3s ease-in-out;
+            }
+            
+            // &:hover:after {
+            //     opacity: 0;
+            // }
+        }
+
+        &:hover {
+            .description-image:after {
+                opacity: 0;
+            }   
+        }
     }
 
 }
