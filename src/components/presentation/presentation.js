@@ -1,4 +1,5 @@
 import React from "react";
+import FiguresBg from "./figuresBg";
 
 const PresentationComponent = () => {
     return (
@@ -11,6 +12,7 @@ const PresentationComponent = () => {
                     I'm a frontend developer.
                 </h3>
             </div>
+            <FiguresBg />
         </section>
     )
 };
