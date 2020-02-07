@@ -201,7 +201,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            animation: 12s ease-in-out 0s infinite alternate none running UpAndDown;
+            animation: 16s ease-in-out 0s infinite alternate none running UpAndDownSlow;
         
             .tree-2 {
                 width: 15rem;
@@ -280,5 +280,15 @@
 
     100% {
         transform: translateY(10vh);
+    }
+}
+
+@keyframes UpAndDownSlow {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(15vh);
     }
 }
