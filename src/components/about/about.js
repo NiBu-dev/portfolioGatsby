@@ -29,7 +29,7 @@ const AboutComponent = () => {
         <Parallax className="parallax" y={[-10, -10]} tagOuter="figure">
             <section className="about" id="about">
                 <div className="about-content">
-                    <h1 className="about-title section-title">Who is this guy?</h1>
+                    <h1 className="about-title section-title">Who is this person?</h1>
                     <div className="description">
                         <h3 className="description-text">I'm a former embedded developer,
                             now already transitioned to web development.
