@@ -30,7 +30,7 @@ const ContactComponent = () => {
                 </div>
                 <div className="contact-links">
                     <div className="contact-link">
-                        <a className="contact-img-wrapper" href="https://github.com/sahas023" target="_blank" rel="noopener noreferrer">
+                        <a className="contact-img-wrapper" href="https://github.com/nbumbu" target="_blank" rel="noopener noreferrer">
                             <GithubIcon />
                         </a>
                     </div>

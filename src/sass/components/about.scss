@@ -7,7 +7,6 @@
     align-items: flex-start;
     padding: 6rem;
     position: relative;
-    margin-top: -10vh;
 
     & > * {
         transform: skewY(7deg);
@@ -25,6 +24,10 @@
 
             &-item {
                 margin: 2.5rem 0;
+            
+                .stack-group {
+                    color: $text-color-secondary;
+                }
 
                 .stack-container {
                     display: flex;
@@ -104,8 +107,10 @@
             display: inline-block;
             width: 50%;
             line-height: 1.5;
+            color: $text-color-secondary;
             @media only screen and (max-width: 700px) {
                 width: 100%;
+                text-align: center;
             }
         }
 

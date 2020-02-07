@@ -14,7 +14,7 @@ const WorkComponent = () => {
         "pinMapper": {
             name: "Pin Mapper",
             description: "Helper app for engineers to map microcontroller peripherals to pins.",
-            githubLinks: "https://github.com/sahas023/pinMapperFrontend",
+            githubLinks: "https://github.com/nbumbu/pinMapperFrontend",
             webLink: "http://pin-pin-mapper.herokuapp.com/",
             stack: ["React.js", "Redux.js", "Styled Components", "Node.js", "MongoDB", "Heroku"]
         }
