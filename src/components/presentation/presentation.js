@@ -1,8 +1,10 @@
 import React from "react";
+import FiguresBg from "./figuresBg";
 
 const PresentationComponent = () => {
     return (
         <section className="presentation">
+            <FiguresBg />
             <div className="presentation-container">
                 <h1 className="presentation-name">
                     Hi, I'm Nico!
