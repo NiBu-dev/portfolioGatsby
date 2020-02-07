@@ -122,6 +122,7 @@
 
             img {
                 border-radius: 50%;
+                filter: grayscale(.5);
             }
 
             &:after {
@@ -131,15 +132,12 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(to right, #2c3e50c4, #bdc3c730);
+                background: linear-gradient(to right, #0065cac4, #bdc3c730);
                 border-radius: 50%;
                 opacity: 50%;
                 transition: all .3s ease-in-out;
+                border: 2px solid $color-gray-dark2;
             }
-            
-            // &:hover:after {
-            //     opacity: 0;
-            // }
         }
 
         &:hover {
