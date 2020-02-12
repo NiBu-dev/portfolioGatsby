@@ -34,7 +34,7 @@ const AboutComponent = () => {
                         <p className="description-text">
                             My journey as a developer started from programming tiny microcontroller chips,
                             smart electronic devices to web development. 
-                            Thus, I'm always willing to learn something new, challange myself, explore new ideas and materialize them
+                            Thus, I'm always willing to learn something new, challenge myself, explore new ideas and materialize them
                             into noice web experiences.
                     </p>
                         <div className="description-image">
