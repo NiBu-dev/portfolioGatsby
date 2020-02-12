@@ -29,13 +29,14 @@ const AboutComponent = () => {
         <Parallax className="parallax" y={[-10, -10]} tagOuter="figure">
             <section className="about" id="about">
                 <div className="about-content">
-                    <h1 className="about-title section-title">Who is this person?</h1>
+                    <h1 className="about-title section-title">Who is this guy?</h1>
                     <div className="description">
-                        <h3 className="description-text">I'm a former embedded developer,
-                            now already transitioned to web development.
-                            I love to explore new ideas and materialize them
+                        <p className="description-text">
+                            My journey as a developer started from programming tiny microcontroller chips,
+                            smart electronic devices to web development. 
+                            Thus, I'm always willing to learn something new, challange myself, explore new ideas and materialize them
                             into noice web experiences.
-                    </h3>
+                    </p>
                         <div className="description-image">
                             <ProfileImage />
                         </div>
