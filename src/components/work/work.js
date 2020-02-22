@@ -11,6 +11,13 @@ const WorkComponent = () => {
             webLink: "https://www.carblee.com",
             stack: ["React.js", "Redux.js", "Next.js", "Styled Components"]
         },
+        "spaceX": {
+            name: "SpaceX Schedule",
+            description: "small application which uses 3rd party api to display past and upcoming launches from SpaceX",
+            githubLinks: "https://github.com/nbumbu/spaceSchedule",
+            webLink: "https://spacex-schedule.netlify.com/",
+            stack: ["React.js", "Redux.js", "Styled Components", "Gatsby.js", "Netlify"]
+        },
         "pinMapper": {
             name: "Pin Mapper",
             description: "Helper app for engineers to map microcontroller peripherals to pins.",

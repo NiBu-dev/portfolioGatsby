@@ -6,6 +6,9 @@ import NodeJsIcon from "../../images/node-dot-js.inline.svg";
 import MongoDbIcon from "../../images/mongodb.inline.svg";
 import HerokuIcon from "../../images/heroku.inline.svg"
 import ReduxIcon from "../../images/redux.inline.svg";
+import GatsbyIcon from "../../images/gatsby.inline.svg";
+import NetlifyIcon from "../../images/netlify.inline.svg";
+
 
 const TechCardComponent = ({ techItemName }) => {
     let icon = null;
@@ -45,6 +48,16 @@ const TechCardComponent = ({ techItemName }) => {
         case "Heroku": {
             icon = <HerokuIcon />
             style += " card-box--heroku"
+            break;
+        }
+        case "Gatsby.js": {
+            icon = <GatsbyIcon />
+            style += " card-box--gatsby"
+            break;
+        }
+        case "Netlify": {
+            icon = <NetlifyIcon />
+            style += " card-box--netlify"
             break;
         }
         default: break;
