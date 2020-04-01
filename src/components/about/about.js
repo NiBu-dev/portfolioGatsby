@@ -33,7 +33,7 @@ const AboutComponent = () => {
                     <div className="description">
                         <p className="description-text">
                             My journey as a developer started from programming tiny microcontroller chips,
-                            smart electronic devices to, finally, web development. 
+                            smart electronic devices, and finally landed to web development. 
                             I'm a person who is always willing to learn something new, challenge myself, explore new ideas and materialize them
                             into noice web experiences.
                     </p>
