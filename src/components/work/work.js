@@ -15,7 +15,7 @@ const WorkComponent = () => {
             name: "SpaceX Schedule",
             description: "This application uses 3rd party api to display past and upcoming launches from SpaceX",
             githubLinks: "https://github.com/nbumbu/spaceSchedule",
-            webLink: "https://spacex-schedule.netlify.com/",
+            webLink: "https://spacex-schedule.netlify.app/",
             stack: ["React.js", "Redux.js", "Styled Components", "Gatsby.js", "Netlify"]
         },
         "pinMapper": {
