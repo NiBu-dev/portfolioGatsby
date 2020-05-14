@@ -10,6 +10,7 @@ import GatsbyIcon from "../../images/gatsby.inline.svg";
 import ReduxIcon from "../../images/redux.inline.svg";
 import JestIcon from "../../images/jest.inline.svg";
 import CypressIcon from "../../images/cypress.inline.svg";
+import TypescriptIcon from "../../images/typescript.inline.svg";
 
 import NodeIcon from "../../images/node-dot-js.inline.svg";
 import MongoDBIcon from "../../images/mongodb.inline.svg";
@@ -50,6 +51,10 @@ const AboutComponent = () => {
                                 <div className="tech-item">
                                     <JSIcon />
                                     <span>Javascript</span>
+                                </div>
+                                <div className="tech-item">
+                                    <TypescriptIcon />
+                                    <span>Typescript</span>
                                 </div>
                                 <div className="tech-item">
                                     <HTMLIcon />
